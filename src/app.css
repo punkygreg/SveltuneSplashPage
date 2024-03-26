@@ -5,12 +5,13 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  background-color: black;
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 a {
@@ -23,16 +24,16 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+ margin-left: 15px; 
+  /* display: flex;
+  place-items: center; */
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; 
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  /* font-size: 3.2em;
+  line-height: 1.1; */
 }
 
 .card {
@@ -40,10 +41,10 @@ h1 {
 }
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: center; */
 }
 
 button {
@@ -58,7 +59,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: orangered;
 }
 button:focus,
 button:focus-visible {
@@ -71,7 +72,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: orangered;
   }
   button {
     background-color: #f9f9f9;
