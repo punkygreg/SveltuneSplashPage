@@ -1,9 +1,11 @@
+
 <script lang="ts">
   
   // import Tabs from './lib/Tabs.svelte'
   // import Router from "./lib/Router.svelte";
   import Subscriber from "./lib/Subscriber.svelte";
   import Docs from './lib/Docs.svelte';
+  import About from "./lib/About.svelte";
   import Roadmap from './lib/Roadmap.svelte';
 
 	// import Tab1 from "./Tab1.svelte";
@@ -14,29 +16,56 @@
   // List of tab items with labels, values and assigned components
   let activeTabValue = 0;
   let items = [
-    { label: "Docs",
+    { label: "About",
 		 value: 1,
-		 component: Docs,
+		 id:"#about",
+		},
+    { label: "Docs",
+		 value: 2,
+		 id: "#docs",
 		},
     { label: "Roadmap",
-		 value: 2,
-		 component: Roadmap,
+		 value: 3,
+		 id: "#roadmap"
 		},
     { label: "Subsribe To Newsletter",
-		 value: 3,
-		 component: Subscriber
+		 value: 4,
+		 id:"#subscriber"
 		}
   ];
 
 
+  function smoothScroll(target) {
+  const element = document.getElementById(target);
+  if (element) {
+    window.scrollTo({
+      top: element.offsetTop - 100,
+      behavior: 'smooth'
+    });
+  }
+}
 
-  const handleClick = tabValue => () => (activeTabValue = tabValue);
+document.addEventListener('DOMContentLoaded', function() {
+  const anchors = document.querySelectorAll('a[href^="#"]');
+  anchors.forEach(function(anchor) {
+    anchor.addEventListener('click', function(event) {
+      event.preventDefault();
+      const target = anchor.getAttribute('href').substring(1);
+      smoothScroll(target);
+    });
+  });
+});
+
+  const handleClick = (tabValue: number) => () => (activeTabValue = tabValue);
+
+
+
 </script>
 
 <main>
 
-  <div >
-    <span class="header">
+  <div id="navbar">
+    <span  id="title" class="header">
       <h1>Sveltune</h1>
       
     </span>
@@ -45,7 +74,7 @@
       <ul>
     
         {#each items as item}
-            <span  class={activeTabValue === item.value ? 'active' : ''}  on:click={handleClick(item.value)}>
+            <span> <a href={item.id} class="{activeTabValue === item.value ? 'active' : ''} tab"   on:click={handleClick(item.value)}>
                 {item.label}
             </span>
         {/each}
@@ -57,41 +86,121 @@
     </span>
   </div>
 
-  <div>
-    {#each items as item}
+
+    <!-- {#each items as item}
         {#if activeTabValue == item.value}
         <div class="box">
             <svelte:component this={item.component}/>
         </div>
         {/if}
-    {/each}
+    {/each} -->
+  
+  <div id="pages">
+  <div id="about">
+    <About />
+  </div>
+  <div id="roadmap">
+    <Roadmap />
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
+  <div>
+    hi
+  </div>
   </div>
 
-  <!-- <p>
-    Check out <a href="https://github.com/oslabs-beta/Sveltune" target="_blank" rel="noreferrer">Our Github</a>
-  </p> -->
+  <div id="subscriber">
+    <Subscriber/>
+  </div>
 
-<!-- <span>
-  <Tabs/>
-</span> -->
-
-
-  <!-- <div class="card">
-    <Counter />
-  </div> -->
-
- 
-
-  <!-- <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p> -->
 </main>
 
 <style>
 
 .header{
   display: inline-block;
-
 }
 
 
@@ -100,31 +209,59 @@
         justify-content: flex-end;
     } */
 
-    #link{
+    /* .link{
         color: white;
         transition: 0.25s ease-in;
+    } */
+    #navbar{
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%; 
+      background: black;
     }
 
-   span{
+    #title{
+      margin-left: 10px;
+    }
+
+    #pages{
+    padding-top:100px;
+  }
+
+   .tab{
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    /* display: block; */
+   
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: 0.25s ease-in;
     font-weight: 400;
   }
+/*  */
+
+  /* span:hover, .link:hover {
+    /* border-color: #e9ecef #e9ecef #dee2e6; */
+    /* background-color: orangered;
+    color: orangered;
+  } */
 
 
-  span:hover, .link:hover {
+
+   .active {
+    color: orange;
+  }
+
+  .link{ 
+   transition: 0.25s ease-in; 
+   padding: 0.5rem 1rem;
+  }
+
+  .tab:hover, .link:hover {
     /* border-color: #e9ecef #e9ecef #dee2e6; */
     /* background-color: orangered; */
     color: orangered;
-  }
-
-  .active {
-    color: orange;
   }
 
 
@@ -147,3 +284,4 @@
 
 
 </style>
+
