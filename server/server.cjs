@@ -1,8 +1,8 @@
 // import express from 'express'
-// import emailControllers from '../server/Controllers/emailControllers'
+// import emailControllers from './Controllers/emailControllers.js'
 
 const express = require('express');
-const emailControllers = require('./Controllers/emailControllers.js');
+const emailControllers = require('./Controllers/emailControllers.cjs');
 
 const app = express();
 
