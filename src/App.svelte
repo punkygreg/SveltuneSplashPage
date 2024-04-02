@@ -20,27 +20,24 @@
 		 value: 1,
 		 id:"#about",
 		},
-    { label: "Docs",
-		 value: 2,
-		 id: "#docs",
-		},
     { label: "Roadmap",
-		 value: 3,
+		 value: 2,
 		 id: "#roadmap"
 		},
     { label: "Subsribe To Newsletter",
-		 value: 4,
+		 value: 3,
 		 id:"#subscriber"
 		}
   ];
 
 
-  function smoothScroll(target) {
+  //
+function smoothScroll(target) {
   const element = document.getElementById(target);
   if (element) {
     window.scrollTo({
       top: element.offsetTop - 100,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   }
 }
@@ -53,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const target = anchor.getAttribute('href').substring(1);
       smoothScroll(target);
     });
+    anchor.addEventListener('click', async () => {
+
+    })
   });
 });
 
@@ -65,12 +65,27 @@ document.addEventListener('DOMContentLoaded', function() {
 <main>
 
   <div id="navbar">
+    <span id="logo"><svg
+      class="logo-svg"
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="30"
+      viewBox="0 0 48 48"
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m28.072 17.405l7.05-10.424c.584-.864-.168-2.002-1.192-1.805L15.308 8.773L7.993 19.589a2.352 2.352 0 0 0 .63 3.266l10.817 7.314l21.397-4.132l-8.633 12.765l-18.622 3.596c-1.024.198-1.776-.941-1.192-1.805l7.05-10.424l8.632-12.764l12.765 8.632"
+      />
+    </svg></span>
     <span  id="title" class="header">
-      <h1>Sveltune</h1>
+      
+      <h1><span id="part1">Svelte</span><span id="part2">Scope</span></h1>
       
     </span>
     <span id = "menu" class="header">
-      <!-- <Router {items}/> -->
       <ul>
     
         {#each items as item}
@@ -102,98 +117,13 @@ document.addEventListener('DOMContentLoaded', function() {
   <div id="roadmap">
     <Roadmap />
   </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  <div>
-    hi
-  </div>
-  </div>
+ 
+  
 
   <div id="subscriber">
     <Subscriber/>
   </div>
+</div>
 
 </main>
 
@@ -218,11 +148,30 @@ document.addEventListener('DOMContentLoaded', function() {
       top:0;
       left:0;
       width:100%; 
-      background: black;
+      /* background: black; */
+      /* opacity: 0.90; */
+      /* backdrop-filter: blur(10px); */
+      /* background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1)) */
+      
+      background: rgba(1, 1, 1, 0.0);
+      background: linear-gradient(0deg, rgba(1, 1, 1, 0.0) 0%,  rgba(1, 1, 1, 1.0) 30%);    
     }
 
     #title{
+      color: orangered;
+      opacity: 0.99;
+    }
+
+    #logo{
       margin-left: 10px;
+    }
+
+    #part1{
+     font-weight:200;
+    }
+
+    #part2{
+     font-weight: bolder;
     }
 
     #pages{
@@ -233,54 +182,28 @@ document.addEventListener('DOMContentLoaded', function() {
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-   
+    color: white;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: 0.25s ease-in;
     font-weight: 400;
   }
-/*  */
 
-  /* span:hover, .link:hover {
-    /* border-color: #e9ecef #e9ecef #dee2e6; */
-    /* background-color: orangered;
-    color: orangered;
-  } */
-
-
-
-   .active {
-    color: orange;
-  }
 
   .link{ 
    transition: 0.25s ease-in; 
    padding: 0.5rem 1rem;
+   color: white;
   }
 
   .tab:hover, .link:hover {
-    /* border-color: #e9ecef #e9ecef #dee2e6; */
-    /* background-color: orangered; */
     color: orangered;
   }
 
-
-  /* .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  } */
-  /* .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+  .active {
+    color: orange;
   }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  } */
 
-  /* .read-the-docs {
-    color: #888;
-  } */
 
 
 </style>

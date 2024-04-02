@@ -1,5 +1,47 @@
 <!-- <main>
 <h1>Subscriber</h1>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
+<div>
+    text
+</div>
 <form>
 
 </form>
