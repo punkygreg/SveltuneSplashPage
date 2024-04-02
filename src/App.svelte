@@ -20,16 +20,12 @@
 		 value: 1,
 		 id:"#about",
 		},
-    { label: "Docs",
-		 value: 2,
-		 id: "#docs",
-		},
     { label: "Roadmap",
-		 value: 3,
+		 value: 2,
 		 id: "#roadmap"
 		},
     { label: "Subsribe To Newsletter",
-		 value: 4,
+		 value: 3,
 		 id:"#subscriber"
 		}
   ];
@@ -69,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <main>
 
   <div id="navbar">
-    <span><svg
+    <span id="logo"><svg
       class="logo-svg"
       xmlns="http://www.w3.org/2000/svg"
       width="30"
@@ -85,7 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
       />
     </svg></span>
     <span  id="title" class="header">
-      <h1>SvelteScope</h1>
+      
+      <h1><span id="part1">Svelte</span><span id="part2">Scope</span></h1>
       
     </span>
     <span id = "menu" class="header">
@@ -161,9 +158,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     #title{
-      /* margin-left: 10px; */
       color: orangered;
       opacity: 0.99;
+    }
+
+    #logo{
+      margin-left: 10px;
+    }
+
+    #part1{
+     font-weight:200;
+    }
+
+    #part2{
+     font-weight: bolder;
     }
 
     #pages{
