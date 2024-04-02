@@ -9,9 +9,10 @@
 <script>
   let email = '';
   let submitted = false;
+  let errorMessage = '';
 
   async function handleSubmit(event) {
-    event.preventDefault()
+    event.preventDefault();
 
     try {
       const response = await fetch('http://localhost:3333/email', {
@@ -24,10 +25,10 @@
       if (response.ok) {
         console.log('Email saved successfully');
 
-        
         submitted = true;
       } else {
         console.error('Error saving email');
+        errorMessage = 'the email already is in use';
       }
     } catch (error) {
       console.error('Error:', error);
@@ -37,12 +38,16 @@
 
 <h1>Subscriber</h1>
 
+<p>To receive future updates, please provide your email address below.</p>
+
 {#if !submitted}
   <form on:submit={handleSubmit}>
- 
     <label>Email:</label>
     <input type="email" id="email" bind:value={email} required />
-    <button type="submit">Submit</button>
+    <button type="submit">Enter</button>
+    {#if errorMessage}
+      <p style="color: red;">{errorMessage}</p>
+    {/if}
   </form>
 {:else}
   <p>Thank you for subscribing! You will receive updates at {email}.</p>
