@@ -29,6 +29,16 @@
 }
 
 @font-face {
+  font-family: SF-Compact-Display-Bold;
+  src: url('src/assets/fonts/SF-Compact-Display-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: SF-Compact-Display-Heavy;
+  src: url('src/assets/fonts/SF-Compact-Display-Heavy.otf') format('truetype');
+}
+
+@font-face {
   font-family: NewYorkExtraLarge-MediumItalic;
   src: url('src/assets/fonts/NewYorkExtraLarge-MediumItalic.otf')
     format('truetype');
@@ -70,6 +80,8 @@
 
 .section-h1-text {
   font-size: 42px !important;
+  font-family: 'SF-Compact-Display-Bold' !important;
+  line-height: normal;
 }
 
 a {
@@ -91,8 +103,17 @@ body {
 }
 
 .section-container {
+  margin-top: 50px;
   max-width: 900px;
   padding: 0 50px;
+}
+
+.section-subheader-text {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  font-family: 'SF-Compact-Display-Semibold';
+  margin-top: 25px;
 }
 
 .body-text {

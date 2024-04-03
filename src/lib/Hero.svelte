@@ -35,7 +35,7 @@
   }
 
   .hero-header-text {
-    font-family: 'NewYorkExtraLarge-MediumItalic', serif;
+    font-family: 'SF-Compact-Display-Bold';
     color: white;
     text-align: center;
     font-size: 50px;
