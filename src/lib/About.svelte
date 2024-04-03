@@ -10,8 +10,8 @@
       application designed to untangle the complexities of state and make
       testing a breeze.
     </p>
-    <h3 class="section-subheader-text">Here's how it works:</h3>
 
+    <!-- VISUALLY DISECT COMPONENT HIERARCHIES -->
     <div class="how-it-works-container">
       <div class="how-it-works-textbox">
         <h4 class="section-subheader-text">
@@ -19,7 +19,7 @@
         </h4>
         <p class="body-text">
           Gain a better understanding of your application’s component hierarchy
-          from a tree diagram that dynamically renders when the DOM is updated
+          from a tree diagram that dynamically renders when the DOM is updated.
         </p>
       </div>
       <div class="how-it-works-img">
@@ -27,11 +27,56 @@
       </div>
     </div>
   </div>
+
+  <!-- TRACK REACTIVE STATE CHANGES IN REAL-TIME -->
+  <div class="how-it-works-container reactive-changes-container">
+    <div class="how-it-works-textbox">
+      <h4 class="section-subheader-text">
+        Track reactive state changes in real-time.
+      </h4>
+      <p class="body-text">
+        Gain a better understanding of your application’s component hierarchy
+        from a tree diagram that dynamically renders when the DOM is updated.
+      </p>
+    </div>
+    <div class="how-it-works-img">
+      <img src="src/assets/props-example.png" alt="Image of component tree" />
+    </div>
+  </div>
+
+  <!-- Create as many snapshots as you’d like (and easily switch between them!) -->
+  <div class="how-it-works-container">
+    <div class="how-it-works-textbox">
+      <h4 class="section-subheader-text">
+        Create as many snapshots as you’d like (and easily switch between them!)
+      </h4>
+      <p class="body-text about-body-text">
+        Sometimes front-end testing can involve layers of setup - perhaps you
+        need to test your application in multiple languages, or multiple themes
+        (light vs. dark mode), and the like. With SvelteScope, you can create
+        multiple snapshots of state and easily switch between them to pinpoint
+        their differences.
+      </p>
+    </div>
+    <div class="how-it-works-img">
+      <img
+        src="src/assets/snapshots-example.png"
+        alt="Image of component tree"
+      />
+    </div>
+  </div>
 </div>
 
 <style>
+  .about-body-text {
+    margin-bottom: 200px !important;
+  }
+
   .about-container {
     margin-top: 100px;
+  }
+
+  .reactive-changes-container {
   }
 
   h1 {
@@ -44,19 +89,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 45vh;
   }
 
-  .how-it-works-header {
-    font-size: 18px;
-    color: white;
+  .section-subheader-text {
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: normal;
   }
 
   .how-it-works-container > div {
     width: 50%;
   }
 
+  .how-it-works-img {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    border-radius: 25px;
   }
 </style>
