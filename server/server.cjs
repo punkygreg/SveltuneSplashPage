@@ -28,8 +28,8 @@ let port = 3333;
 //   }
 // }
 
-app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, '/index.html'))
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../index.html'))
 }) 
 
 app.post('/email', emailControllers.postEmail, (req, res) => {
@@ -47,7 +47,7 @@ app.use((err, req, res, next) => {
   const defaultErr = {
     log: 'middleware problem',
     status: 500,
-    message: { err: 'Earthquake' },
+    message: { err: '500: Server went staight to global error handler' },
   };
 
   const errObj = Object.assign({}, defaultErr, err);
