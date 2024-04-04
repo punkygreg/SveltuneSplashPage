@@ -1,6 +1,7 @@
 <script lang="ts">
   import Hero from './lib/Hero.svelte';
   import About from './lib/About.svelte';
+  import  Subscriber  from  './lib/Subscriber.svelte';
   // List of tab items with labels, values and assigned components
   let activeTabValue = 0;
 
@@ -60,6 +61,10 @@
 <!-- ABOUT SECTION -->
 <section id="about-section">
   <About />
+</section>
+
+<section >
+  <Subscriber />
 </section>
 
 <!-- OLD CODE: -->
