@@ -28,6 +28,10 @@ if (process.env.NODE_ENV === 'production'){
   }
 }
 
+app.get("/", (req, res) => {
+  res.sendFile(path.resolve(__dirname, '/index.html'))
+}) 
+
 app.post('/email', emailControllers.postEmail, (req, res) => {
   res.status(200).json(res.locals.email);
 });
