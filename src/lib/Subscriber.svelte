@@ -94,6 +94,12 @@
     color: white;
   }
 
+  .success-message {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
+
   .subscription-container {
     margin-top: 50px;
     display: flex;
@@ -108,7 +114,7 @@
   .subscription-form {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 75%;
   }
 
@@ -152,6 +158,6 @@
   }
 
   .subscription-container {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 </style>
