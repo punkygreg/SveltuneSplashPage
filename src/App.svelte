@@ -334,13 +334,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   #title > h1 {
-    font-family: 'SF-Compact-Display-Ultralight';
+    font-family: 'SF-Compact-Display-Ultralight', system-ui, sans-serif;
     color: orangered;
     font-weight: 100;
   }
 
   #title > h1 > span {
-    font-family: 'SF-Compact-Display-Semibold';
+    font-family: 'SF-Compact-Display-Semibold', system-ui, sans-serif;
   }
 
   #navbar {

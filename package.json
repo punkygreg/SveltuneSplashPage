@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && rollup -c",
-    "start": "node server/server.cjs",
+    "start": "nodemon server/server.cjs",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
@@ -39,6 +39,7 @@
     "env": "^0.0.2",
     "express": "^4.19.2",
     "mongoose": "^8.2.4",
+    "nodemon": "^3.1.0",
     "rollup": "^4.14.0"
   }
 }

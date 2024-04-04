@@ -23,7 +23,7 @@
         </p>
       </div>
       <div class="how-it-works-img">
-        <img src="src/assets/component-tree-example.png" />
+        <img src="static/assets/component-tree-example.png" />
       </div>
     </div>
   </div>

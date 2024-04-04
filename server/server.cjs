@@ -27,7 +27,9 @@ let port = 3333;
 
 
 // const __dirname = path.resolve();
-app.use( express.static(path.resolve(__dirname,'../static')));
+app.use( '/static', express.static(path.resolve(__dirname,'../static')));
+app.use( '/fonts', express.static(path.resolve(__dirname,'../static/assets/fonts')));
+console.log(path.resolve(__dirname,'../static/assets/fonts'))
 app.use(express.static(path.resolve(__dirname, '../build')));
 
 

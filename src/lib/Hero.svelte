@@ -13,7 +13,7 @@
   </div>
 
   <div class="hero-image-container">
-    <img src="src/assets/propchanges.gif" class="hero-gif" />
+    <img src="static/assets/propchanges.gif" class="hero-gif" />
   </div>
 </div>
 
@@ -34,7 +34,7 @@
   }
 
   .hero-header-text {
-    font-family: 'SF-Compact-Display-Bold';
+    font-family: 'SF-Compact-Display-Bold', system-ui, sans-serif;
     color: white;
     text-align: center;
     font-size: 50px;
@@ -43,7 +43,7 @@
   }
 
   .hero-p-text {
-    font-family: 'SF-Compact-Display-Regular';
+    font-family: 'SF-Compact-Display-Regular', system-ui, sans-serif;
     color: white;
     text-align: center;
     /* max-width: 650px; */

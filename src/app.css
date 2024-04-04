@@ -48,7 +48,7 @@
   margin: 0;
   padding: 0;
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: 'SF-Compact-Display-Ultralight', system-ui;
+  font-family: 'SF-Compact-Display-Ultralight', system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: white;
@@ -80,7 +80,7 @@
 
 .section-h1-text {
   font-size: 42px !important;
-  font-family: 'SF-Compact-Display-Bold' !important;
+  font-family: 'SF-Compact-Display-Bold', system-ui, sans-serif !important;
   line-height: normal;
   color: white;
 }
@@ -113,7 +113,7 @@ body {
   font-size: 24px;
   color: white;
   font-weight: 700;
-  font-family: 'SF-Compact-Display-Semibold';
+  font-family: 'SF-Compact-Display-Semibold', system-ui, sans-serif;
   margin-top: 25px;
   line-height: normal;
   color: orangered;
@@ -124,13 +124,13 @@ body {
   font-size: 20px;
   color: white;
   line-height: 1.3;
-  font-family: 'SF-Compact-Display-Regular', sans-serif;
+  font-family: 'SF-Compact-Display-Regular', system-ui, sans-serif;
   color: lightgray;
 }
 
 .body-text-link {
   color: gray;
-  font-family: 'SF-Compact-Display-Regular', sans-serif;
+  font-family: 'SF-Compact-Display-Regular', system-ui,sans-serif;
 }
 
 .body-text-link:hover {
