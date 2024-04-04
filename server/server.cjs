@@ -31,9 +31,9 @@ if (process.env.NODE_ENV === 'production'){
 app.post('/email', emailControllers.postEmail, (req, res) => {
   res.status(200).json(res.locals.email);
 });
-app.delete('/email/:id', emailControllers.deleteEmail, (req, res) => {
-  res.status(200).json('deleted');
-});
+// app.delete('/email/:id', emailControllers.deleteEmail, (req, res) => {
+//   res.status(200).json('deleted');
+// });
 
 app.use('*', (req, res) => {
   res.status(404).json('Path not found');
