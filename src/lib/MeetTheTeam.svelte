@@ -10,8 +10,16 @@
       />
       <div class="teammate-content">
         <h3 class="section-subheader-text">Branden Basche</h3>
-        <a class="body-text-link" href="linkedin.com">LinkedIn</a>
-        <a class="body-text-link" href="github.com">GitHub</a>
+        <a
+          class="body-text-link"
+          href="https://www.linkedin.com/in/brandenbasche/"
+          target="_blank">LinkedIn</a
+        >
+        <a
+          class="body-text-link"
+          href="https://github.com/brandenrbasche"
+          target="_blank">GitHub</a
+        >
       </div>
     </div>
 
@@ -20,8 +28,16 @@
       <img src="src/assets/binh-headshot.jpg" class="headshot-img binh" />
       <div class="teammate-content">
         <h3 class="section-subheader-text">Binh Nguyen</h3>
-        <a class="body-text-link" href="linkedin.com">LinkedIn</a>
-        <a class="body-text-link" href="github.com">GitHub</a>
+        <a
+          class="body-text-link"
+          href="https://www.linkedin.com/in/binh-nguyen-a07731101/"
+          target="_blank">LinkedIn</a
+        >
+        <a
+          class="body-text-link"
+          href="https://github.com/binhnguyen96/"
+          target="_blank">GitHub</a
+        >
       </div>
     </div>
 
@@ -30,8 +46,16 @@
       <img src="src/assets/donald-headshot.jpg" class="headshot-img donald" />
       <div class="teammate-content">
         <h3 class="section-subheader-text">Donald Wong</h3>
-        <a class="body-text-link" href="linkedin.com">LinkedIn</a>
-        <a class="body-text-link" href="github.com">GitHub</a>
+        <a
+          class="body-text-link"
+          href="https://www.linkedin.com/in/donald-wong-93702931"
+          target="_blank">LinkedIn</a
+        >
+        <a
+          class="body-text-link"
+          href="https://github.com/dwong92"
+          target="_blank">GitHub</a
+        >
       </div>
     </div>
 
@@ -40,8 +64,16 @@
       <img src="src/assets/james-headshot.png" class="headshot-img james" />
       <div class="teammate-content">
         <h3 class="section-subheader-text">James Lee</h3>
-        <a class="body-text-link" href="linkedin.com">LinkedIn</a>
-        <a class="body-text-link" href="github.com">GitHub</a>
+        <a
+          class="body-text-link"
+          href="https://www.linkedin.com/in/james-lee-a7b2842b6/"
+          target="_blank">LinkedIn</a
+        >
+        <a
+          class="body-text-link"
+          href="https://github.com/alphajames258"
+          target="_blank">GitHub</a
+        >
       </div>
     </div>
 
@@ -50,8 +82,16 @@
       <img src="src/assets/greg-headshot.jpg" class="headshot-img greg" />
       <div class="teammate-content">
         <h3 class="section-subheader-text">Gregory Valentin</h3>
-        <a class="body-text-link" href="linkedin.com">LinkedIn</a>
-        <a class="body-text-link" href="github.com">GitHub</a>
+        <a
+          class="body-text-link"
+          href="https://www.linkedin.com/in/gregory-valentin-a389b3221/"
+          target="_blank">LinkedIn</a
+        >
+        <a
+          class="body-text-link"
+          href="https://github.com/punkygreg"
+          target="_blank">GitHub</a
+        >
       </div>
     </div>
   </div>
