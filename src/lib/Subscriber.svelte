@@ -94,22 +94,25 @@
 {:else}
   <p>Thank you for subscribing! You will receive updates at {email}.</p>
 {/if} -->
-
 <div class="subscription-container">
-  <div class="subscription-text">
-    <h2>Subscribe To Our Newsletter for Future Updates</h2>
-  </div>
-  <div class="subscription-form">
-    <form on:submit={handleSubmit}>
-      <label for="email">Email:</label>
-      <input type="email" id="email" bind:value={email} required />
-      <button type="submit">Subscribe</button>
-      {#if errorMessage}
-        <p class="error-message">{errorMessage}</p>
+    <div class="subscription-text">
+      <h2>Subscribe To Our Newsletter for Future Updates</h2>
+    </div>
+    <div class="subscription-form">
+      {#if !submitted}
+        <form on:submit={handleSubmit}>
+          <label for="email">Email:</label>
+          <input type="email" id="email" bind:value={email} required />
+          <button type="submit">Subscribe</button>
+          {#if errorMessage}
+            <p class="error-message">{errorMessage}</p>
+          {/if}
+        </form>
+      {:else}
+        <p class="success-message">Thank you for subscribing! You will receive updates at {email}.</p>
       {/if}
-    </form>
+    </div>
   </div>
-</div>
 
 <style>
   /* Existing styles */
