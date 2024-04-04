@@ -23,7 +23,7 @@
         </p>
       </div>
       <div class="how-it-works-img">
-        <img src="src/assets/component-tree-example.png" />
+        <img src="static/assets/component-tree-example.png" />
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@
       </p>
     </div>
     <div class="how-it-works-img">
-      <img src="src/assets/props-example.png" alt="Image of component tree" />
+      <img src="static/assets/props-example.png" alt="Image of component tree" />
     </div>
   </div>
 
@@ -60,7 +60,7 @@
     </div>
     <div class="how-it-works-img">
       <img
-        src="src/assets/snapshots-example.png"
+        src="static/assets/snapshots-example.png"
         alt="Image of component tree"
       />
     </div>

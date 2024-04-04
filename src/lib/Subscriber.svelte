@@ -127,7 +127,7 @@
   }
 
   .subscription-text h2 {
-    font-family: 'SF-Compact-Display-Semibold';
+    font-family: 'SF-Compact-Display-Semibold', system-ui, sans-serif;
     /* font-family: 'SF-Compact-Display-Thin', sans-serif; */
     color: orangered;
     font-size: 24px;
@@ -135,7 +135,7 @@
 
   .subscription-form label {
     /* font-family: 'SF-Compact-Display-Bold'; */
-    font-family: 'SF-Compact-Display-Semibold', sans-serif;
+    font-family: 'SF-Compact-Display-Semibold', system-ui, sans-serif;
     color: white;
     margin-bottom: 10px;
   }

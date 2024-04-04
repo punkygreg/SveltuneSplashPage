@@ -5,7 +5,7 @@
     <!-- branden -->
     <div class="teammate">
       <img
-        src="src/assets/branden-headshot.jpeg"
+        src="static/assets/branden-headshot.jpeg"
         class="headshot-img branden"
       />
       <div class="teammate-content">
@@ -25,7 +25,7 @@
 
     <!-- binh -->
     <div class="teammate">
-      <img src="src/assets/binh-headshot.jpg" class="headshot-img binh" />
+      <img src="static/assets/binh-headshot.jpg" class="headshot-img binh" />
       <div class="teammate-content">
         <h3 class="section-subheader-text">Binh Nguyen</h3>
         <a
@@ -43,7 +43,7 @@
 
     <!-- donald -->
     <div class="teammate">
-      <img src="src/assets/donald-headshot.jpg" class="headshot-img donald" />
+      <img src="static/assets/donald-headshot.jpg" class="headshot-img donald" />
       <div class="teammate-content">
         <h3 class="section-subheader-text">Donald Wong</h3>
         <a
@@ -61,7 +61,7 @@
 
     <!-- james -->
     <div class="teammate">
-      <img src="src/assets/james-headshot.png" class="headshot-img james" />
+      <img src="static/assets/james-headshot.png" class="headshot-img james" />
       <div class="teammate-content">
         <h3 class="section-subheader-text">James Lee</h3>
         <a
@@ -79,7 +79,7 @@
 
     <!-- greg -->
     <div class="teammate">
-      <img src="src/assets/greg-headshot.jpg" class="headshot-img greg" />
+      <img src="static/assets/greg-headshot.jpg" class="headshot-img greg" />
       <div class="teammate-content">
         <h3 class="section-subheader-text">Gregory Valentin</h3>
         <a

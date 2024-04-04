@@ -1,6 +1,4 @@
-// import express from 'express'
-// import emailControllers from './Controllers/emailControllers.js'
-
+// const { urlencoded } = require('express');
 const express = require('express');
 const emailControllers = require('./Controllers/emailControllers.cjs');
 const cors = require('cors');
@@ -9,28 +7,35 @@ const dotenv = require('dotenv');
 dotenv.config();
 const app = express();
 
-
 app.use(express.json());
+// app.use(express.urlencoded({extended:true}));
 app.use(cors());
 
 let port = 3333;
-
 
 // if (process.env.NODE_ENV === 'production'){
 //   app.use(express.static(path.join(__dirname, '/build')));
 
 //   app.get("*", (req, res) => {
 //     res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
-//   }) 
+//   })
 // } else {
 //   app.get('/'), (req,res) => {
 //     res.send('server is running...')
 //   }
 // }
 
+
+// const __dirname = path.resolve();
+app.use( '/static', express.static(path.resolve(__dirname,'../static')));
+app.use( '/fonts', express.static(path.resolve(__dirname,'../static/assets/fonts')));
+console.log(path.resolve(__dirname,'../static/assets/fonts'))
+app.use(express.static(path.resolve(__dirname, '../build')));
+
+
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../index.html'))
-}) 
+  res.sendFile(path.resolve(__dirname, '../index.html'));
+});
 
 app.post('/email', emailControllers.postEmail, (req, res) => {
   res.status(200).json(res.locals.email);
