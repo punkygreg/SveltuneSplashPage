@@ -101,7 +101,6 @@
     width: 100%;
     flex-direction: column;
     padding: 20px;
-    background-color: black;
     border-radius: 40px;
     border-color: white;
   }
@@ -141,6 +140,7 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    margin-top: 20px;
   }
   .subscription-form button {
     color: white;
