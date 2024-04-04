@@ -44,7 +44,7 @@
 
     <!-- greg -->
     <div class="teammate">
-      <img src="src/assets/no-chick-fil-a-sauce.jpg" class="headshot-img" />
+      <img src="src/assets/fake-headshot.jpg" class="headshot-img" />
       <div class="teammate-content">
         <h3 class="section-subheader-text">Gregory Valentin</h3>
         <a class="body-text-link" href="linkedin.com">LinkedIn</a>
