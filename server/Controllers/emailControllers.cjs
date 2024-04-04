@@ -40,7 +40,7 @@ emailControllers.deleteEmail = async (req, res, next) => {
       return next({ message: 'cant find id' });
     }
   } catch (error) {
-    return next({ message: 'Earthquake' });
+    return next({ message: 'Earthquake2' });
   }
 };
 
