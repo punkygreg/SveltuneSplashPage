@@ -4,8 +4,11 @@
 const express = require('express');
 const emailControllers = require('./Controllers/emailControllers.cjs');
 const cors = require('cors');
-
+const path = require('path');
+const dotenv = require('dotenv');
+dotenv.config();
 const app = express();
+
 
 app.use(express.json());
 app.use(cors());
