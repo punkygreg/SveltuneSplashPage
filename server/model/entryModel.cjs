@@ -1,10 +1,10 @@
 // import mongoose from 'mongoose'
 const mongoose = require('mongoose')
 
-const myURI =
-  'mongodb+srv://jameslee4988:jameslee@cluster0.eqmdxxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
-const URI = process.env.MONGO_URI || myURI;
+
+const URI = process.env.MONGO_URI;
+
 
 const EmailSchema = new mongoose.Schema({
     email: {
