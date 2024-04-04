@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import Hero from './lib/Hero.svelte';
   import About from './lib/About.svelte';
   // List of tab items with labels, values and assigned components
@@ -26,7 +26,7 @@
     });
   });
 
-  const handleClick = (tabValue: number) => () => (activeTabValue = tabValue);
+  const handleClick = (/** @type {number} */ tabValue)  => (activeTabValue = tabValue);
 </script>
 
 <div class="app-container">

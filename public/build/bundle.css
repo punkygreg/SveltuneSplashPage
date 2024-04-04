@@ -1,0 +1,181 @@
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* GLOBAL FONTS */
+@font-face {
+  font-family: SF-Compact-Display-Ultralight;
+  src: url('src/assets/fonts/SF-Compact-Display-Ultralight.otf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: SF-Compact-Display-Thin;
+  src: url('src/assets/fonts/SF-Compact-Display-Thin.otf') format('truetype');
+}
+
+@font-face {
+  font-family: SF-Compact-Display-Semibold;
+  src: url('src/assets/fonts/SF-Compact-Display-Semibold.otf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: SF-Compact-Display-Bold;
+  src: url('src/assets/fonts/SF-Compact-Display-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: SF-Compact-Display-Heavy;
+  src: url('src/assets/fonts/SF-Compact-Display-Heavy.otf') format('truetype');
+}
+
+@font-face {
+  font-family: NewYorkExtraLarge-MediumItalic;
+  src: url('src/assets/fonts/NewYorkExtraLarge-MediumItalic.otf')
+    format('truetype');
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'SF-Compact-Display-Ultralight', system-ui;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: linear-gradient(
+    -45deg,
+    rgb(158, 42, 0),
+    black,
+    black,
+    rgb(158, 42, 0)
+  );
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.section-h1-text {
+  font-size: 42px !important;
+  font-family: 'SF-Compact-Display-Bold' !important;
+  line-height: normal;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.section-container {
+  margin-top: 50px;
+  max-width: 900px;
+  padding: 0 50px;
+}
+
+.section-subheader-text {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  font-family: 'SF-Compact-Display-Semibold';
+  margin-top: 25px;
+  line-height: normal;
+  color: orangered;
+  filter: drop-shadow(0px 0px 10px rgba (255, 89, 0, 0.165) a);
+}
+
+.body-text {
+  font-size: 20px;
+  color: white;
+  line-height: 1.3;
+  font-family: 'SF-Compact-Display-Regular';
+}
+
+/* .card {
+  padding: 2em;
+} */
+
+/* #app { */
+/* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+/* } */
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: orangered;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: orangered;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+
+  /* html{
+    scroll-behavior: smooth;
+  } */
+}
+section.svelte-1t0fj8e.svelte-1t0fj8e.svelte-1t0fj8e{width:100vw;display:flex;align-items:center;justify-content:center}#hero-section.svelte-1t0fj8e.svelte-1t0fj8e.svelte-1t0fj8e{margin-top:25px}#about-section.svelte-1t0fj8e.svelte-1t0fj8e.svelte-1t0fj8e{width:100vw}.logo-svg.svelte-1t0fj8e.svelte-1t0fj8e.svelte-1t0fj8e{stroke-width:3px;color:rgba(255, 68, 0, 0.308);width:25px;height:25px;margin-right:10px;padding-bottom:20px}.header.svelte-1t0fj8e.svelte-1t0fj8e.svelte-1t0fj8e{display:flex;justify-content:center;align-items:center}.header-span.svelte-1t0fj8e.svelte-1t0fj8e.svelte-1t0fj8e{font-weight:700}.header.svelte-1t0fj8e>h1.svelte-1t0fj8e.svelte-1t0fj8e{display:inline-block;font-weight:100;font-size:24px}#title.svelte-1t0fj8e.svelte-1t0fj8e.svelte-1t0fj8e{margin-bottom:20px}#title.svelte-1t0fj8e>h1.svelte-1t0fj8e.svelte-1t0fj8e{font-family:'SF-Compact-Display-Ultralight';color:orangered;font-weight:100}#title.svelte-1t0fj8e>h1.svelte-1t0fj8e>span.svelte-1t0fj8e{font-family:'SF-Compact-Display-Semibold'}#navbar.svelte-1t0fj8e.svelte-1t0fj8e.svelte-1t0fj8e{position:fixed;top:0;left:0;width:100vw;height:100px;display:flex;align-items:center;justify-content:center;background:rgba(1, 1, 1, 0);background:linear-gradient(
+      0deg,
+      rgba(1, 1, 1, 0) 0%,
+      rgba(1, 1, 1, 1) 30%
+    )}.about-body-text.svelte-12xiu10.svelte-12xiu10{margin-bottom:200px !important}.about-container.svelte-12xiu10.svelte-12xiu10{margin-top:100px}h1.svelte-12xiu10.svelte-12xiu10{color:white;font-size:50px}.how-it-works-container.svelte-12xiu10.svelte-12xiu10{margin-top:100px;display:flex;justify-content:space-between;align-items:center;height:45vh}.section-subheader-text.svelte-12xiu10.svelte-12xiu10{align-items:flex-start;justify-content:flex-start;line-height:normal}.how-it-works-container.svelte-12xiu10>div.svelte-12xiu10{width:50%}.how-it-works-img.svelte-12xiu10.svelte-12xiu10{display:flex;justify-content:flex-end}img.svelte-12xiu10.svelte-12xiu10{width:80%;height:auto;border-radius:25px}@font-face{font-family:SF-Compact-Display-Regular;src:url('src/assets/fonts/SF-Compact-Display-Regular.otf')
+      format('truetype')}.hero-container.svelte-6e9l77{margin-top:50px;display:flex;align-items:center;justify-content:center;flex-direction:column;max-width:600px}.hero-header-text.svelte-6e9l77{font-family:'SF-Compact-Display-Bold';color:white;text-align:center;font-size:50px;line-height:normal}.hero-p-text.svelte-6e9l77{font-family:'SF-Compact-Display-Regular';color:white;text-align:center}img.svelte-6e9l77{margin-top:26px;max-width:75vw;height:auto;border-radius:25px;background-position:center;filter:drop-shadow(0px 0px 10pxrgba (255, 89, 0, 0.165) a)}

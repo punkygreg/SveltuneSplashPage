@@ -12,6 +12,19 @@ app.use(cors());
 
 let port = 3333;
 
+
+if (process.env.NODE_ENV === 'production'){
+  app.use(express.static(path.join(__dirname, '/build')));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+  }) 
+} else {
+  app.get('/'), (req,res) => {
+    res.send('server is running...')
+  }
+}
+
 app.post('/email', emailControllers.postEmail, (req, res) => {
   res.status(200).json(res.locals.email);
 });

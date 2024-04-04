@@ -1,5 +1,4 @@
-<script lang="ts">
-</script>
+
 
 <div class="hero-container">
   <div class="hero-text">
