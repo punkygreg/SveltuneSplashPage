@@ -1,10 +1,11 @@
 // import mongoose from 'mongoose'
 const mongoose = require('mongoose')
+const dotenv = require('dotenv');
+dotenv.config();
 
+  
 
-
-const URI = process.env.MONGO_URI;
-
+const URI = process.env.MONGO_URI ;
 
 const EmailSchema = new mongoose.Schema({
     email: {
