@@ -82,6 +82,7 @@
   font-size: 42px !important;
   font-family: 'SF-Compact-Display-Bold' !important;
   line-height: normal;
+  color: white;
 }
 
 a {
@@ -123,7 +124,23 @@ body {
   font-size: 20px;
   color: white;
   line-height: 1.3;
-  font-family: 'SF-Compact-Display-Regular';
+  font-family: 'SF-Compact-Display-Regular', sans-serif;
+  color: lightgray;
+}
+
+.body-text-link {
+  color: gray;
+  font-family: 'SF-Compact-Display-Regular', sans-serif;
+}
+
+.body-text-link:hover {
+  transition: 0.25s ease-in-out;
+}
+
+@media only screen and (max-width: 650px) {
+  * {
+    text-align: center;
+  }
 }
 
 /* .card {
