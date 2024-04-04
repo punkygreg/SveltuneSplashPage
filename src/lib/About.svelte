@@ -89,7 +89,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 45vh;
+    height: 50vh;
+  }
+
+  @media only screen and (max-width: 650px) {
+    .how-it-works-container {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .how-it-works-textbox {
+      width: 100% !important;
+    }
+
+    .how-it-works-img > img {
+      width: 100%;
+    }
+
+    .about-body-text {
+      margin-bottom: 25px !important;
+    }
   }
 
   .section-subheader-text {

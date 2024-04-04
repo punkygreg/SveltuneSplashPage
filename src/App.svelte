@@ -1,6 +1,8 @@
 <script lang="ts">
   import Hero from './lib/Hero.svelte';
   import About from './lib/About.svelte';
+  import MeetTheTeam from './lib/MeetTheTeam.svelte';
+
   // List of tab items with labels, values and assigned components
   let activeTabValue = 0;
 
@@ -60,6 +62,11 @@
 <!-- ABOUT SECTION -->
 <section id="about-section">
   <About />
+</section>
+
+<!-- MEET THE TEAM SECTION -->
+<section id="meet-the-team-section">
+  <MeetTheTeam />
 </section>
 
 <!-- OLD CODE: -->
@@ -284,6 +291,10 @@ document.addEventListener('DOMContentLoaded', function() {
   #about-section {
     /* height: 75vh; */
     width: 100vw;
+  }
+
+  #meet-the-team-section {
+    margin-top: 50px;
   }
 
   .logo-svg {
