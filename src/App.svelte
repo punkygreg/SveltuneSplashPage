@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import Hero from './lib/Hero.svelte';
   import About from './lib/About.svelte';
   import  Subscriber  from  './lib/Subscriber.svelte';
@@ -29,7 +29,7 @@
     });
   });
 
-  const handleClick = (tabValue: number) => () => (activeTabValue = tabValue);
+  const handleClick = (/** @type {number} */ tabValue)  => (activeTabValue = tabValue);
 </script>
 
 <div class="app-container">
